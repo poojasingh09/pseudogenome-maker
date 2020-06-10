@@ -1,0 +1,5 @@
+#Pooja Singh
+#pooja.singh09@gmail.com
+#June2020
+#replace alleles in a reference fasta with alternative alleles (from a vcf or snp table)
+#pseudogenomes are useful for using as a species/strain specific reference for mapping and snp-calling or for building phylogenies
