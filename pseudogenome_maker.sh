@@ -14,7 +14,7 @@ seqkit fx2tab ref.fa > ref.tab
 #awk to replace alleles in the reference. the alleles2replace.txt file should ONLY contain the loci that you wish to replace
 #alleles2replace.txt file's first four columns should be CHROM, POS, REF, ALT, with CHROM & POS being the loci that you are targetting, 
 REF being the reference alleles and ALT being the alternative allele. alleles2replace.txt can be the first four columns of a vcf file 
-that has been generated from mapping and snp-calling. 
+that has been generated from mapping and snp-calling. Be sure to remove multiallelic loci before you run this.
 
 awk 'FILENAME=="ref.tab" {fa[$1]=$2; next} {fa[$1]=substr(fa[$1], 1, $2-1) $4 substr(fa[$1], $2+1, length(fa[$1])-$2)} END {for (id in fa){print ">" id "\n" fa[id]}}' ref.tab alleles2replace.txt > ref.replaced.fa
 
