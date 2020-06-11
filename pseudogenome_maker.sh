@@ -3,7 +3,7 @@
 #June2020
 #replace alleles in a reference fasta with alternative alleles (from a vcf or snp table)
 #pseudogenomes are useful for using as a species/strain specific reference for mapping and snp-calling or for building phylogenies
-
+# this script takes 20 to 30 mins to process a 14Gb ref genome.
 
 ## convert fasta to tab. this is important for the awk code to work. seqkit can be installed from here https://bioinf.shenwei.me/seqkit/
 
