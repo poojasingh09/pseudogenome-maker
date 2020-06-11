@@ -9,7 +9,6 @@
 
 seqkit fx2tab ref.fa > ref.tab
 
-seqkit fx2tab ../../DF_db_v2018_12/DF_ref/Psme.1_0.fa > Psme.1_0.tab
 
 
 #awk to replace alleles in the reference. the alleles2replace.txt file should ONLY contain the loci that you wish to replace
